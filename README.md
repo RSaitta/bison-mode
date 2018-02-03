@@ -3,6 +3,8 @@
 Bison major-mode for Emacs.
 
 ## Changelog
+### 0.4
+Updated autoindenting for space efficiency. WIP
 
 ### 0.3
 
