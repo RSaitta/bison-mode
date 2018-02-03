@@ -6,14 +6,14 @@ Bison major-mode for Emacs.
 Put the .el file in /.emacs.d/lisp. If it doesn't exist, make it.
 
 Add the follow to your .emacs or .init.el file (whichever you have)
-
+```
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (load "bison-mode")
-
+```
 For convenient c-function indexing, add
-
+```
 (add-hook 'bison-mode-hook 'imenu-add-menubar-index)
-
+```
 ```
 (setq imenu-create-index-function 
         (lambda ()
