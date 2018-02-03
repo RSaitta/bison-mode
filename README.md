@@ -14,24 +14,17 @@ For convenient c-function indexing, add
 
 (add-hook 'bison-mode-hook 'imenu-add-menubar-index)
 
+```
 (setq imenu-create-index-function 
-
         (lambda ()
-        
           (let ((end))
-          
              (beginning-of-buffer)
-             
              (re-search-forward "^%%")
-             
              (forward-line 1)
-             
-             (setq end (save-excursion (re-search-forward "^%%") (point)))
-             
+             (setq end (save-excursion (re-search-forward "^%%") (point))
              (loop while (re-search-forward "^\\([a-z].*?\\)\\s-*\n?\\s-*:" end t)
-             
                    collect (cons (match-string 1) (point))))))
-
+```
 ## Changelog
 ### 0.4
 Updated autoindenting for space efficiency. WIP
