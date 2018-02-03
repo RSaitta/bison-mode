@@ -3,6 +3,7 @@
 Bison major-mode for Emacs.
 
 ##Installation
+
 Put the .el file in /.emacs.d/lisp. If it doesn't exist, make it.
 
 Add the follow to your .emacs or .init.el file (whichever you have)
